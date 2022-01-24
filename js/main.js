@@ -1,5 +1,5 @@
 const dropdown = document.querySelector('.dropdown');
-if ( dropdown != null) {
+if (dropdown != null) {
     const dropdownBtn = document.querySelector('.dropdown-btn');
     const dropdownMenu = document.querySelector('.dropdown-menu');
     const dropdownItems = document.querySelectorAll('.dropdown-item');
