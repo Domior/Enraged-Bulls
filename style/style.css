@@ -407,6 +407,7 @@ a {
 }
 
 .minting-perks-title {
+    text-transform: uppercase;
     white-space: nowrap;
     margin: 0 32px;
 }
@@ -418,9 +419,7 @@ a {
 }
 
 .minting-perks-info-container {
-    padding-bottom: 110px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
-    margin-bottom: 45px;
+    margin-bottom: 145px;
 }
 
 .minting-perks-info-container li {
@@ -455,6 +454,46 @@ a {
 .minting-perks-info-container .mint-main-info-text {
     width: 60.5%;
     text-transform: capitalize;
+}
+
+.roadmap-container {
+    padding-bottom: 110px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+    margin-bottom: 45px;
+}
+
+.roadmap-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.roadmap-title {
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin: 0 32px;
+}
+
+.roadmap-title-line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+
+table.roadmap-table {
+    width: 100%;
+    background-color: #050A38;
+    border-collapse: collapse;
+    border: 2px solid #ECC051;
+    text-align: center;
+}
+
+table.roadmap-table td {
+    font-size: 20px;
+    line-height: 28px;
+    border: 2px solid #ECC051;
+    padding: 20px;
 }
 
 .footer {
@@ -751,6 +790,26 @@ a {
         width: 100%;
     }
 
+    .roadmap-container {
+        padding-bottom: 80px;
+    }
+
+    .roadmap-title-container {
+        margin: 0 -24px;
+        margin-bottom: 40px;
+    }
+
+    .roadmap-title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    table.roadmap-table td {
+        font-size: 18px;
+        line-height: 27px;
+        padding: 15px 0;
+    }
+
     .footer {
         margin-bottom: 40px;
     }
@@ -777,20 +836,24 @@ a {
     .mint-container {
         padding: 30px 10px;
     }
+
     .mint-countdown-container {
         grid-column-gap: 4px;
         justify-items: center;
         padding: 0;
         margin-bottom: 24px;
     }
+
     .mint-countdown {
         width: 74px;
         height: 74px;
     }
+
     .mint-countdown span {
         font-size: 34px;
         line-height: 34px;
     }
+
     .mint-countdown p {
         font-size: 12px;
         line-height: 16px;
@@ -800,9 +863,11 @@ a {
         width: 80%;
         margin-bottom: 20px;
     }
+
     .dropdown-btn {
         height: 50px;
     }
+
     .dropdown-item {
         height: 45px;
     }
@@ -853,5 +918,20 @@ a {
 
     .secondary-team-block:nth-child(3) {
         grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .roadmap-container {
+        padding-bottom: 45px;
+    }
+
+    table.roadmap-table {
+        border-width: 1px;
+    }
+
+    table.roadmap-table td {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 8px;
+        border-width: 1px;
     }
 }
