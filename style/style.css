@@ -774,39 +774,43 @@ a {
 }
 
 @media (max-width: 540px) {
+    .mint-container {
+        padding: 30px 10px;
+    }
     .mint-countdown-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 2fr;
-        grid-column-gap: 18px;
-        grid-row-gap: 18px;
+        grid-column-gap: 4px;
         justify-items: center;
-        padding: 0 16px;
+        padding: 0;
         margin-bottom: 24px;
     }
-
-    .mint-countdown:nth-child(1) {
-        grid-area: 1 / 1 / 2 / 2;
+    .mint-countdown {
+        width: 74px;
+        height: 74px;
     }
-
-    .mint-countdown:nth-child(2) {
-        grid-area: 1 / 2 / 2 / 3;
+    .mint-countdown span {
+        font-size: 34px;
+        line-height: 34px;
     }
-
-    .mint-countdown:nth-child(3) {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .mint-countdown:nth-child(4) {
-        grid-area: 2 / 2 / 3 / 3;
+    .mint-countdown p {
+        font-size: 12px;
+        line-height: 16px;
     }
 
     .dropdown {
         width: 80%;
+        margin-bottom: 20px;
+    }
+    .dropdown-btn {
+        height: 50px;
+    }
+    .dropdown-item {
+        height: 45px;
     }
 
     .btn-wallet,
     .btn-mint {
         width: 100%;
+        padding: 16px 0;
     }
 
     .team-container {
