@@ -1,8 +1,10 @@
 function getTimeRemaining(endtime) {
 	const total = Date.parse(endtime) - Date.parse(new Date());
+	const gmtTimeDiffInHours = new Date().getTimezoneOffset() / 60
 	const seconds = Math.floor((total / 1000) % 60);
 	const minutes = Math.floor((total / 1000 / 60) % 60);
-	const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+	const localHours = Math.floor((total / (1000 * 60 * 60)) % 24);
+	const hours = localHours - gmtTimeDiffInHours;
 	const days = Math.floor(total / (1000 * 60 * 60 * 24));
 
 	return {
@@ -38,6 +40,6 @@ function initializeClock(id, endtime) {
 	const timeinterval = setInterval(updateClock, 1000);
 }
 
-const deadline = new Date("Jan 30, 2022 00:00:00"); //set the date here
+const deadline = new Date("Jan 30, 2022 13:00:00" ); //set the date here GMT
 
 initializeClock('mint-countdown', deadline);
